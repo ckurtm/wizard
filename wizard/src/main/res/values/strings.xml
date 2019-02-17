@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="measure_weight_metric">kgs</string>
+    <string name="measure_weight_imperial">lbs</string>
+    <string name="measure_height_metric">cm</string>
+    <string name="measure_height_imperial">\"</string>
+    <string name="height_imperial_value" formatted="false"> %d ft %d in</string>
+
+</resources>

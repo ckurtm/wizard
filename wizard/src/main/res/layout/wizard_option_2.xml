@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/choice_title"
+        style="@style/WizardPageTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        tools:text="@string/qstn_2_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <com.peirr.wizard.widget.ChoiceGroup
+        android:id="@+id/choice_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation='horizontal'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.peirr.wizard.widget.ChoiceButton
+            android:id="@+id/choice_1"
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            app:cb_type="vertical"
+            style="@style/ChoiceButtonStyle"
+            tools:cb_icon="@tools:samples/avatars"
+            tools:cb_text="Male"
+            android:layout_marginEnd="16dp"
+            />
+
+        <com.peirr.wizard.widget.ChoiceButton
+            android:layout_marginStart="16dp"
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            app:cb_type="vertical"
+            android:id="@+id/choice_2"
+            style="@style/ChoiceButtonStyle"
+            tools:cb_icon="@tools:samples/avatars"
+            tools:cb_text="Female"
+            />
+
+    </com.peirr.wizard.widget.ChoiceGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

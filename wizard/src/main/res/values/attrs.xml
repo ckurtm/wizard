@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChoiceGroup">
+        <attr name="choice_selectedId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ChoiceButton">
+        <attr name="cb_type" format="enum">
+            <enum name="horizontal_1" value="0" />
+            <enum name="horizontal_2" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+        <attr name="cb_text_color" format="color" />
+        <attr name="cb_icon" format="reference" />
+        <attr name="cb_text" format="reference|string" />
+        <attr name="cb_selected" format="boolean" />
+        <attr name="cb_subtext" format="reference|string" />
+        <attr name="cb_subtext_color" format="reference|color" />
+        <attr name="cb_pressed_color" format="reference|color" />
+    </declare-styleable>
+
+
+</resources>
